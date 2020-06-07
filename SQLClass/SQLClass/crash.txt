@@ -1,0 +1,5 @@
+//------- simple strings -------------------
+select * from student where lname = Jackson
+
+//----- quoted strings ---------------------
+select * from student where lname = "Del Rio"
