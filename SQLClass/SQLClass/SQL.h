@@ -141,7 +141,8 @@ void SQL::batchRun() {
 							cout << temp;
 							cout << endl;
 						} else {
-							cout << endl;
+							cout << "\n[" << commandCount++ << "] " << ptree["command"]
+								<< " " << ptree["fields"][0] << " from " << ptree["table"] << endl;
 							Table temp = table[ptree["table"][0]].select(ptree["fields"]);
 							cout << temp << endl;
 						}
